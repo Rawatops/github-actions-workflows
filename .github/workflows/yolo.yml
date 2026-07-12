@@ -1,0 +1,10 @@
+name: my-runner
+on: workflow_dispatch
+jobs:
+  first_job:
+    runs-on: ubuntu-slim
+    steps:
+      - name: print-hello
+        run : echo "This is my first message"
+      - name: hehe-bye
+        run : echo "completed running"
