@@ -1,10 +1,12 @@
-name: my-runner
-on: workflow_dispatch
+name: my first workflow
+on: push
 jobs:
-  first_job:
-    runs-on: ubuntu-slim
+  job-1:
+    run-on: ubuntu:latest
     steps:
-      - name: print-hello
-        run : echo "This is my first message"
-      - name: hehe-bye
-        run : echo "completed running"
+      run: "Hello from job one"
+      run: "world form job one"
+  job-2:
+    run-on: ubuntu:latest
+    steps:
+      run: "this is is from job 2"
