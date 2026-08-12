@@ -2,11 +2,11 @@ name: my first workflow
 on: push
 jobs:
   job-1:
-    run-on: ubuntu:latest
+    run-on: ubuntu-latest
     steps:
-      run: "Hello from job one"
-      run: "world form job one"
+      - run: "Hello from job one"
+      - run: "world form job one"
   job-2:
-    run-on: ubuntu:latest
+    run-on: ubuntu-latest
     steps:
-      run: "this is is from job 2"
+      - run: "this is is from job 2"
