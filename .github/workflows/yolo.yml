@@ -4,9 +4,9 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-      - run: "Hello from job one"
-      - run: "world form job one"
+      - run: echo "Hello from job one"
+      - run: echo "world form job one"
   job-2:
     runs-on: ubuntu-latest
     steps:
-      - run: "this is is from job 2"
+      - run: echo "this is is from job 2"
